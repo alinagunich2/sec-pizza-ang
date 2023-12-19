@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpiz_ng=self.webpackChunkpiz_ng||[]).push([[592],{351:(a,c,t)=>{t.d(c,{Y:()=>o});var e=t(4650);let o=(()=>{class r{constructor(){this.product="",this.count=0}}return r.\u0275fac=function(n){return new(n||r)},r.\u0275prov=e.Yz7({token:r,factory:r.\u0275fac,providedIn:"root"}),r})()}}]);
