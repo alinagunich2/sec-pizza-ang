@@ -1,0 +1,39 @@
+<div class="product">
+    <div class="">{{this.cartProductService.count}}</div>
+
+    <div class="">{{testservService.arr}}</div>
+    <button (click)="testservService.add()">gfgfg</button>
+    <!-- <div *ngIf="product.image; then first else secon"></div>
+   
+    <ng-template #first>
+        <div class="product-img" >
+            <img src="assets/img/products/{{product.image}}" >
+        </div>
+    </ng-template>
+
+    <ng-template #secon>
+        <div class="product-img" >
+            <img src="assets/img/order/pizzzzza.png" >
+        </div>
+    </ng-template> -->
+
+    <div class="product-img" >
+        <img src="{{product.image}}" >
+    </div>
+
+    <div class="">{{product.datetime | date:"full" | uppercase}}</div>
+
+    <custom-title [productTitle]="product.title| uppercase" >
+        <p head>head Текси который будет повторяться</p>
+        <p foot>foot Текси который будет повторяться</p>
+    </custom-title> 
+    <!-- <div class="product-title">{{product.title}}</div> -->
+    <div class="product-text">{{product.description }}</div>
+    <div *ngIf="Ali" class="">ПРОВЕРКА</div>
+    <div class="product-action" #comp>
+        <div class="btn btn-add-to-cart" (click)="addProductToCart()">В корзину</div>
+        <div class="btn btn-white" [routerLink]="['/products',product.id]">Описание</div>
+    </div>
+    
+</div>
+<!-- (click)="addToCards(product,oderElement)" -->

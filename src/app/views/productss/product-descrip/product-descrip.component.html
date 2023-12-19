@@ -1,0 +1,31 @@
+<section class="products" >
+    <div class="container">
+      <div class=""></div>
+        <h2 class="products-title" id="products-title">Описание пиццы</h2>
+        <div class="product-item">
+
+            
+           
+                <div class="product-img" >
+                    <img src="{{product.image}}" >
+                </div>
+            
+                <div class="">{{product.datetime | date:"full" | uppercase}}</div>
+            
+                <custom-title [productTitle]="product.title| uppercase" >
+                    <p head>head Текси который будет повторяться</p>
+                    <p foot>foot Текси который будет повторяться</p>
+                </custom-title> 
+                <!-- <div class="product-title">{{product.title}}</div> -->
+                <div class="product-text">{{product.description }}</div>
+                <div class="product-action" #comp>
+                    <div class="btn btn-add-to-cart" routerLink="/order" [queryParams]="{product:product.title}">В корзину</div>
+                </div>
+                
+         
+            <!-- (click)="addToCards(product,oderElement)" -->
+
+        </div> 
+    </div>
+  
+  </section>
